@@ -3,6 +3,10 @@
 ```
 mkdir output
 ```
+## 0. Quality Control
+```
+fastqc ${sequences}/24NGS775-B1_S55_R1_001.fastq.gz ${sequences}/24NGS775-B1_S55_R2_001.fastq.gz -o output/
+```
 
 ## 1. Trimming
 ```
