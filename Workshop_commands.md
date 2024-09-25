@@ -172,7 +172,7 @@ java -Xmx10G -jar ${GATK38_path} -T MuTect2 -R ${genome} -I:tumor output/24NGS77
 
 ## 8. Variant annotation
 ```
-convert2annovar.pl -format vcf4 output/24NGS775-B1_vardict.vcf --outfile output/24NGS775-B1.avinput --withzyg --includeinfo
+convert2annovar.pl -format vcf4 output/24NGS775-B1_mutect.vcf --outfile output/24NGS775-B1.avinput --withzyg --includeinfo
 
 table_annovar.pl output/24NGS775-B1.avinput --out output/24NGS775-B1_final --remove --protocol refGene,cosmic84,exac03 --operation g,f,f --buildver hg19 --nastring '-1' --otherinfo --csvout ${database}
 ```
